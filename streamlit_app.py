@@ -21,7 +21,7 @@ def main():
     # Add header with image
     header_html = """
     <div style="background-color: #264653; padding: 20px; border-radius: 10px;">
-        <h1 style="color: white; text-align: center; font-size: 36px;">🌐 中英文翻译应用</h1>
+        <h1 style="color: white; text-align: center; font-size: 36px;">🌐 Chinese and English translation application</h1>
     </div>
     <br />
     """
@@ -39,7 +39,7 @@ def main():
                 st.write(translated_text)
                 st.markdown("<hr>", unsafe_allow_html=True)
             else:
-                st.warning("请输入一些中文文本。")
+                st.warning("Please enter some Chinese text.")
 
     # Right column: Input English text to translate to Chinese
     with right_column:

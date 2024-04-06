@@ -3,3 +3,4 @@ transformers
 tensorflow
 sentencepiece
 tf-keras
+sacremoses

@@ -2,13 +2,13 @@ import streamlit as st
 from transformers import pipeline
 
 st.set_page_config(
-    page_title="Chinese and English translation application",
+    page_title="Chinese-English Translation",
     page_icon="🌐",
     layout="wide",
     initial_sidebar_state="auto"
 )
 
-st.title('Chinese and English translation application')
+st.title('Chinese-English Translation')
 
 translator_en_to_zh = pipeline("translation_en_to_zh", model="Helsinki-NLP/opus-mt-en-zh")
 translator_zh_to_en = pipeline("translation_en_to_zh", model="Helsinki-NLP/opus-mt-zh-en")
@@ -21,7 +21,7 @@ def main():
     # Add header with image
     header_html = """
     <div style="background-color: #264653; padding: 20px; border-radius: 10px;">
-        <h1 style="color: white; text-align: center; font-size: 36px;">🌐 Chinese and English translation application</h1>
+        <h1 style="color: white; text-align: center; font-size: 36px;">🌐 Chinese-English Translation</h1>
     </div>
     <br />
     """
